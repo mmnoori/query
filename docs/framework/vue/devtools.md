@@ -63,7 +63,7 @@ import { VueQueryDevtools } from '@tanstack/vue-query-devtools'
 - `position?: "top" | "bottom" | "left" | "right"`
   - Defaults to `bottom`.
   - The position of the React Query devtools panel.
-- `client?: QueryClient`
+- `queryClient?: QueryClient`
   - Use this to use a custom QueryClient. Otherwise, the one from the nearest context will be used.
 - `errorTypes?: { name: string; initializer: (query: Query) => TError}`
   - Use this to predefine some errors that can be triggered on your queries. The initializer will be called (with the specific query) when that error is toggled on from the UI. It must return an Error.
